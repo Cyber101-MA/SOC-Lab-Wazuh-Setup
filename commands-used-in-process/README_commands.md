@@ -2,8 +2,7 @@
 # Ubuntu System Preparation
 
 
-- Check current hostname
- - hostnamectl
+- Check current hostname # hostnamectl
 
 - Change hostname
 sudo hostnamectl set-hostname wazuh_manager
