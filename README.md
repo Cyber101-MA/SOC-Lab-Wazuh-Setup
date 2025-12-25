@@ -101,7 +101,7 @@ This screenshot shows the system hostname being changed to a professional and ro
 Setting a clear and consistent hostname is an important prerequisite for log identification, service clarity, and SOC environment hygiene.
 
 **Screenshot:**  
-[View Screenshot – Hostname Configuration](./screenshots/01-hostname-configuration.png)
+![View Screenshot – Hostname Configuration](./screenshots/01-hostname-configuration.png)
 
 #### 2. Ubuntu Version Verification
 
@@ -109,7 +109,7 @@ This screenshot captures the verification of the Ubuntu server version to ensure
 Confirming the operating system version is crucial before installation to avoid dependency or compatibility issues during deployment.
 
 **Screenshot:**  
-[View Screenshot – Ubuntu Version Verification](./screenshots/02-ubuntu-version-verification.png)
+![View Screenshot – Ubuntu Version Verification](./screenshots/02-ubuntu-version-verification.png)
 
 
 #### 3. System Update Check
@@ -118,7 +118,7 @@ This screenshot shows the system packages being checked and updated to the lates
 Ensuring the system is up-to-date is essential to prevent package conflicts and to guarantee a smooth installation of Wazuh components.
 
 **Screenshot:**  
-[View Screenshot – System Update Check](./screenshots/03-system-update-check.png)
+![View Screenshot – System Update Check](./screenshots/03-system-update-check.png)
 
 
 ### Setup
@@ -129,7 +129,7 @@ This screenshot captures the initial installation preparation where the Wazuh in
 The `config.yml` file was edited using `nano` to define the node, server, and dashboard IP addresses, followed by generating the required Wazuh configuration files.
 
 **Screenshot:**  
-[View Screenshot – Installer Download & Config Generation](./screenshots/04-wazuh-installer-and-config-generation.png)
+![View Screenshot – Installer Download & Config Generation](./screenshots/04-wazuh-installer-and-config-generation.png)
 
 
 
@@ -139,7 +139,7 @@ This screenshot captures the installation of the Wazuh Indexer node.
 The Indexer is responsible for storing, indexing, and managing log data collected by the Wazuh Manager, making it a critical component of the SOC lab setup.
 
 **Screenshot:**  
-[View Screenshot – Indexer Node Installation](./screenshots/05-indexer-node-installation.png)
+![View Screenshot – Indexer Node Installation](./screenshots/05-indexer-node-installation.png)
 
 #### 6. Wazuh Indexer Cluster Startup
 
@@ -147,7 +147,7 @@ This screenshot shows the initialization and startup of the Wazuh Indexer cluste
 Starting the cluster ensures that all indexer nodes are communicating correctly and ready to handle log storage and retrieval from the Wazuh Manager.
 
 **Screenshot:**  
-[View Screenshot – Indexer Cluster Startup](./screenshots/06-indexer-cluster-startup.png)
+![View Screenshot – Indexer Cluster Startup](./screenshots/06-indexer-cluster-startup.png)
 
 #### 7. Wazuh Indexer Cluster Testing
 
@@ -156,7 +156,7 @@ A username and password were generated for the indexer, and the cluster was test
 The command included the server’s real IP with port `9200` and the host password generated earlier. Successful execution returned cluster details, confirming that the indexer cluster is operational.
 
 **Screenshot:**  
-[View Screenshot – Indexer Cluster Testing](./screenshots/07-indexer-cluster-testing.png)
+![View Screenshot – Indexer Cluster Testing](./screenshots/07-indexer-cluster-testing.png)
 
 #### 8. Wazuh Server Installation – Initial Failure & Resolution
 
@@ -165,7 +165,7 @@ The failure was caused by a missing GPG key and an active `apt` process from ano
 To resolve these issues, the required GPG keys were installed, and the system was restarted to clear the `apt` lock, allowing the installation to proceed successfully.
 
 **Screenshot:**  
-[View Screenshot – Wazuh Server Installation Failure & Resolution](./screenshots/08-wazuh-server-installation-failure.png)
+![View Screenshot – Wazuh Server Installation Failure & Resolution](./screenshots/08-wazuh-server-installation-failure.png)
 
 #### 9. Wazuh Server Installation via Bash
 
@@ -173,7 +173,7 @@ This screenshot captures the successful installation of the Wazuh Server using t
 After resolving the GPG key and `apt` issues, the bash script executed without errors, deploying the Wazuh Manager and preparing it for subsequent configuration and validation steps.
 
 **Screenshot:**  
-[View Screenshot – Wazuh Server Installation via Bash](./screenshots/09-wazuh-server-installation.png)
+![View Screenshot – Wazuh Server Installation via Bash](./screenshots/09-wazuh-server-installation.png)
 
 #### 10. Wazuh Dashboard Installation – Initial Issue
 
@@ -183,7 +183,7 @@ Despite the connection issue, the installation process generated a username and 
 A subsequent check confirmed that the indexer was not in a functional state, indicating that further troubleshooting was required before proceeding.
 
 **Screenshot:**  
-[View Screenshot – Wazuh Dashboard Installation Initial Issue](./screenshots/10-wazuh-dashboard-installation-issue.png)
+![View Screenshot – Wazuh Dashboard Installation Initial Issue](./screenshots/10-wazuh-dashboard-installation-issue.png)
 
 
 #### 11. Wazuh Indexer Restart and Status Verification
@@ -193,7 +193,7 @@ After the restart, the indexer’s status was checked, confirming that it was fu
 This step ensured that the indexer was ready for communication with the Wazuh Dashboard and Manager.
 
 **Screenshot:**  
-[View Screenshot – Wazuh Indexer Restart & Status](./screenshots/11-wazuh-indexer-restart-status.png)
+![View Screenshot – Wazuh Indexer Restart & Status](./screenshots/11-wazuh-indexer-restart-status.png)
 
 #### 12. Wazuh Dashboard Restart and Verification
 
@@ -201,7 +201,7 @@ This screenshot shows the Wazuh Dashboard being restarted.
 After the restart, the dashboard became fully functional and operational, confirming successful communication with the Wazuh Manager and Indexer, and making it accessible via HTTPS.
 
 **Screenshot:**  
-[View Screenshot – Wazuh Dashboard Restart & Verification](./screenshots/12-wazuh-dashboard-restart-verification.png)
+![View Screenshot – Wazuh Dashboard Restart & Verification](./screenshots/12-wazuh-dashboard-restart-verification.png)
 
 #### 13. Wazuh Dashboard Login – API Offline
 
@@ -210,7 +210,7 @@ Upon login, the dashboard displayed that the API status was offline, indicating 
 This step highlighted the need for further troubleshooting to bring the Wazuh API online.
 
 **Screenshot:**  
-[View Screenshot – Dashboard Login & API Offline](./screenshots/13-dashboard-login-api-offline.png)
+![View Screenshot – Dashboard Login & API Offline](./screenshots/13-dashboard-login-api-offline.png)
 
 
 #### 14. Wazuh Manager Service Status Check
@@ -219,7 +219,7 @@ This screenshot shows the verification of the Wazuh Manager service.
 The service was confirmed to be running and in a healthy state, ensuring that the core Wazuh components were operational before addressing the API connectivity issue.
 
 **Screenshot:**  
-[View Screenshot – Wazuh Manager Service Status](./screenshots/14-wazuh-manager-status.png)
+![View Screenshot – Wazuh Manager Service Status](./screenshots/14-wazuh-manager-status.png)
 
 
 #### 15. Wazuh Manager Listening Ports Check
@@ -229,7 +229,7 @@ Two listening entries were observed, each with a backlog of `2048` connections.
 The first entry was bound to `0.0.0.0` (all IPv4 addresses), and the second entry to `[::]` (all IPv6 addresses), confirming that the manager was correctly listening on the expected network interfaces.
 
 **Screenshot:**  
-[View Screenshot – Wazuh Manager Listening Ports](./screenshots/15-wazuh-manager-listening.png)
+![View Screenshot – Wazuh Manager Listening Ports](./screenshots/15-wazuh-manager-listening.png)
 
 #### 16. Wazuh Indexer Connector Initialization Failures
 
@@ -237,7 +237,7 @@ This screenshot captures the repeated warnings from Wazuh modules indicating tha
 These errors highlighted that the Wazuh Manager was unable to communicate with the Indexer for collecting and storing inventory and vulnerability data, necessitating further troubleshooting.
 
 **Screenshot:**  
-[View Screenshot – Indexer Connector Initialization Failures](./screenshots/16-indexer-connector-failures.png)
+![View Screenshot – Indexer Connector Initialization Failures](./screenshots/16-indexer-connector-failures.png)
 
 
 #### 17. Wazuh Manager Reinstallation and Start
@@ -246,7 +246,7 @@ This screenshot shows the deletion of the previous Wazuh Manager installation, f
 Reinstallation resolved previous issues with module connectivity and API accessibility, ensuring a fresh and fully functional Wazuh Manager setup.
 
 **Screenshot:**  
-[View Screenshot – Wazuh Manager Reinstallation & Start](./screenshots/17-wazuh-manager-reinstallation.png)
+![View Screenshot – Wazuh Manager Reinstallation & Start](./screenshots/17-wazuh-manager-reinstallation.png)
 
 
 
@@ -256,6 +256,6 @@ This screenshot shows the Wazuh Dashboard after refreshing the webpage following
 The API status was now online and fully operational, indicating that all components were correctly communicating and ready for use in the SOC lab environment.
 
 **Screenshot:**  
-[View Screenshot – Dashboard API Online](./screenshots/18-dashboard-api-online.png)
+![View Screenshot – Dashboard API Online](./screenshots/18-dashboard-api-online.png)
 
 
