@@ -3,7 +3,7 @@
 
 
 - Check current hostname
-hostnamectl
+ - hostnamectl
 
 - Change hostname
 sudo hostnamectl set-hostname wazuh_manager
