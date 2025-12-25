@@ -1,10 +1,10 @@
-# --- System Preparation & Prerequisites ---
-hostnamectl
-sudo hostnamectl set-hostname wazuh_manager
-lsb_release -a
-sudo apt update && sudo apt upgrade -y
+# System Preparation & Prerequisites
+- hostnamectl
+- sudo hostnamectl set-hostname wazuh_manager
+- lsb_release -a
+- sudo apt update && sudo apt upgrade -y
 ---
-#Download and Configure Wazuh Installer
+# Download and Configure Wazuh Installer
 wget <wazuh-install.sh_url>
 wget <config.yml_url>
 nano config.yml
