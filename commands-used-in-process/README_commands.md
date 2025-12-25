@@ -1,14 +1,14 @@
-# ================================
-# Ubuntu System Preparation
-# ================================
 
-# Check current hostname
+# Ubuntu System Preparation
+
+
+- Check current hostname
 hostnamectl
 
-# Change hostname
+- Change hostname
 sudo hostnamectl set-hostname wazuh_manager
 
-# Verify Ubuntu version
+- Verify Ubuntu version
 lsb_release -a
 
 # Update package lists and upgrade installed packages
