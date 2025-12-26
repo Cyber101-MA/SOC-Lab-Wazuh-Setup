@@ -87,7 +87,7 @@ This diagram illustrates the complete Wazuh stack deployment flow, including sys
 It provides a high-level visual overview of how the Wazuh Manager, Indexer, Dashboard, and API components are deployed and verified within the SOC lab environment.
 
 **Diagram:**  
-![View Architecture Diagram](./architecture/wazuh-deployment-architecture.png)
+![View Architecture Diagram](./architecture/wazuh-architecture.png)
 
 
 
